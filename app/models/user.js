@@ -65,16 +65,16 @@ const collectionSchema = new mongoose.Schema({
     default: "user"
   },
   deleted: {
-    type: String,
-    default: "no"
+    type: Boolean,
+    default: false
   },
   active: {
-    type: String,
-    default: "no"
+    type: Boolean,
+    default: false
   },
   disabled: {
-    type: String,
-    default: "no"
+    type: Boolean,
+    default: false
   },
   nonce: String,
   created_at: Date,

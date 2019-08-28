@@ -31,7 +31,7 @@ expressSwagger({
         type: 'apiKey',
         in: 'header',
         name: 'Authorization',
-        description: "Authentication Token for NodeJS API Boilerplate",
+        description: "Authentication Token for Boilerplate API",
       }
     }
   },

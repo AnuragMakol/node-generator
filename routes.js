@@ -8,8 +8,9 @@ var controllers = require('./app/controllers');
 //  / _, _/ /_/ / /_/ / /_/  __(__  ) 
 // /_/ |_|\____/\__,_/\__/\___/____/  
                                    
-router.get('/', controllers.UserController.UserWelcome);
-router.post('/user/issuejwt', controllers.UserController.IssueJWT);
-router.post('/user/verifyjwt', controllers.UserController.VerifyJWT);
+router.get('/', controllers.UserController.welcome);
+router.post('/user/login', controllers.UserController.login);
+router.post('/user/register', controllers.UserController.register);
+router.post('/user/verifyToken', controllers.UserController.verifyToken);
 
 module.exports = router;
