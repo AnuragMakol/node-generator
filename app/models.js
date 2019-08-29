@@ -1,5 +1,6 @@
 var mongoose = require("mongoose");
 var beautifyUnique = require("mongoose-beautiful-unique-validation");
+
 mongoose.connect(process.env.MONGO_URL,{ 
   useNewUrlParser: true,
   useCreateIndex: true

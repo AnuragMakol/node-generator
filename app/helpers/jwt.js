@@ -1,4 +1,5 @@
 var jsonwebtoken = require('jsonwebtoken');
+var randomstring = require('randomstring');
 
 var jwt = {
   issueJWT: function (user) {
@@ -24,6 +25,13 @@ var jwt = {
     });
 
     return verify;
+  },
+  generateNonce: function () {
+    return randomstring.generate({
+      length: 32,
+      charset: 'alphabetic',
+      readable: true
+    });
   }
 }
 

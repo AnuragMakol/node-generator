@@ -27,8 +27,7 @@ const collectionSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: true,
-    validate: schemaValidator.passwordValidator
+    required: true
   },
   address: {
     type: String,
